@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Menu = () => {
     return (
@@ -9,86 +10,49 @@ const Menu = () => {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <span data-feather="home"></span>
-                            <span>Principal</span>
+                            <Link to="/" >Principal</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file"></span>
-                            <span>Ordenes</span>
+                            <Link to="/proveedores" >Proveedores</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="shopping-cart"></span>
-                            <span>Productos</span>
+                            <Link to="/clientes" >Clientes</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="shopping-cart"></span>
-                            <span>Inventario</span>
+                            <Link to="/pagos" >Pagos</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="users"></span>
-                            <span>Proveedores</span>
+                            <Link to="/deudas" >Deudas</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="bar-chart-2"></span>
-                            <span>Reportes</span>
+                            <Link to="/banco" >Banco</Link>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="layers"></span>
-                            <span>Integraciones</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Guardar reportes</span>
-                    <a class="link-secondary" href="#" aria-label="Add a new report">
-                        <span data-feather="plus-circle"></span>
-                    </a>
-                </h6>
-
-                <ul class="nav flex-column mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            <span>Mes actual</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            <span>Trimestre pasado</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            <span>Compromiso social</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            <span>Ventas de fin de año</span>
+                            <Link to="/estadisticas" >Estadísticas</Link>
                         </a>
                     </li>
                 </ul>
